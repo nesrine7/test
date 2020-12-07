@@ -1,0 +1,14 @@
+<div >
+    <span  
+          [ngClass]=" promotion?
+           'badge badge-success' 
+           : 'badge badge-warning' " > 
+           Meuble n°: {{i+1}}:{{m.name}} 
+           <img [src]="m.image">
+        </span>
+        <ul>
+            <li>Prix : m.price</li>
+            <li>Date : m.date</li>
+        </ul>
+       
+</div>
